@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "smBjmcpdkqQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IET\\Desktop\\Dot Net\\SolnCoreDotNet\\03MethodOverriding\\03MethodOverriding.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IET\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.11\\microsoft.dotnet.ilcompiler.8.0.11.nupkg.sha512",
+    "C:\\Users\\IET\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.11\\microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
+    "C:\\Users\\IET\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.11\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\bin\Debug\net8.0\02Inheritance.exe
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\bin\Debug\net8.0\02Inheritance.deps.json
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\bin\Debug\net8.0\02Inheritance.runtimeconfig.json
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\bin\Debug\net8.0\02Inheritance.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\bin\Debug\net8.0\02Inheritance.pdb
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.AssemblyInfo.cs
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\refint\02Inheritance.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.pdb
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\02Inheritance.genruntimeconfig.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\02Inheritance\obj\Debug\net8.0\ref\02Inheritance.dll

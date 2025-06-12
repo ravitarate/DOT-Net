@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\bin\Debug\net8.0\03MethodOverriding.exe
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\bin\Debug\net8.0\03MethodOverriding.deps.json
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\bin\Debug\net8.0\03MethodOverriding.runtimeconfig.json
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\bin\Debug\net8.0\03MethodOverriding.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\bin\Debug\net8.0\03MethodOverriding.pdb
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.AssemblyInfo.cs
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\refint\03MethodOverriding.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.pdb
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\03MethodOverriding.genruntimeconfig.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\03MethodOverriding\obj\Debug\net8.0\ref\03MethodOverriding.dll

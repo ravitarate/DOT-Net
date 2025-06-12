@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\bin\Debug\net8.0\01CoreDotNet.exe
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\bin\Debug\net8.0\01CoreDotNet.deps.json
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\bin\Debug\net8.0\01CoreDotNet.runtimeconfig.json
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\bin\Debug\net8.0\01CoreDotNet.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\bin\Debug\net8.0\01CoreDotNet.pdb
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.AssemblyInfo.cs
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\refint\01CoreDotNet.dll
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.pdb
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\01CoreDotNet.genruntimeconfig.cache
+C:\Users\IET\Desktop\Dot Net\SolnCoreDotNet\01CoreDotNet\obj\Debug\net8.0\ref\01CoreDotNet.dll
