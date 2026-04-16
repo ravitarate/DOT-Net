@@ -1,0 +1,397 @@
+# .NET Development Mastery Roadmap
+### Personalized for Ravi — .NET/C# Developer, Pune
+
+---
+
+## How to Use This Roadmap
+
+You're already working with .NET at your startup, so this isn't a "start from zero" plan. This is structured to take you from **intern-level .NET developer** to someone who can confidently crack interviews at Goldman Sachs GCC, Deutsche Bank Tech, Microsoft, and similar companies in 2–3 years.
+
+**Time commitment:** 2–3 hours/day outside work  
+**Parallel track:** Continue your DSA prep (Striver's A2Z + Python) — this roadmap is for your .NET depth, not a replacement for DSA.
+
+---
+
+## Phase 1: C# Language Mastery (Weeks 1–8)
+
+You use C# daily, but there's a difference between *using* it and *owning* it. Senior-level interviews at Goldman Sachs or Microsoft will test language depth.
+
+### Topics to Cover (in order)
+
+**1.1 — Core Language Deep Dive**
+- Value types vs reference types (stack vs heap, boxing/unboxing)
+- Strings: immutability, `StringBuilder`, string interning, `Span<char>`
+- Enums, structs, records (when to use each)
+- Nullable reference types and null safety patterns
+- Pattern matching (C# 11/12/13 features)
+- Tuples, deconstruction, ranges, indices
+
+**1.2 — Object-Oriented Programming (Solid Depth)**
+- Inheritance vs composition (when to choose which)
+- Abstract classes vs interfaces (C# 8+ default interface methods)
+- Sealed classes, static classes
+- Operator overloading
+- Covariance and contravariance (`in`, `out` keywords)
+
+**1.3 — Generics & Collections**
+- Generic classes, methods, constraints (`where T : class`, `new()`, etc.)
+- `List<T>`, `Dictionary<TKey,TValue>`, `HashSet<T>`, `Queue<T>`, `Stack<T>`
+- `IEnumerable<T>` vs `ICollection<T>` vs `IList<T>` — when to expose which
+- `ConcurrentDictionary`, `ConcurrentQueue` — thread-safe collections
+- Custom generic implementations
+
+**1.4 — Delegates, Events, and Functional Patterns**
+- `Action`, `Func`, `Predicate` delegates
+- Events and event handlers (publisher-subscriber pattern)
+- Lambda expressions and closures
+- Expression trees (basics)
+
+**1.5 — LINQ (Master This — It's Asked Everywhere)**
+- Query syntax vs method syntax
+- `Select`, `Where`, `GroupBy`, `Join`, `Aggregate`, `SelectMany`
+- Deferred execution vs immediate execution
+- LINQ to Objects, LINQ to Entities (EF Core)
+- Writing custom LINQ extension methods
+- Performance implications of LINQ
+
+**1.6 — Asynchronous Programming (Critical for Backend)**
+- `async`/`await` — how it actually works under the hood
+- `Task`, `Task<T>`, `ValueTask<T>`
+- `SynchronizationContext` and `ConfigureAwait(false)`
+- `Task.WhenAll`, `Task.WhenAny`, cancellation tokens
+- Async streams (`IAsyncEnumerable<T>`)
+- Common pitfalls: async void, deadlocks, fire-and-forget
+
+**1.7 — Memory Management & Performance**
+- Garbage collection: Gen 0/1/2, LOH, finalization queue
+- `IDisposable` and the dispose pattern
+- `Span<T>`, `Memory<T>`, `ArrayPool<T>`
+- ref structs, `stackalloc`
+- Benchmarking with BenchmarkDotNet
+
+### How to Learn
+
+| Resource | Type | Cost | Notes |
+|----------|------|------|-------|
+| **Microsoft Learn: C# Path** | Interactive tutorials | Free | Start here for any gaps in fundamentals |
+| **C# in Depth (Jon Skeet)** | Book | Paid | The definitive C# book — read chapters relevant to your gaps |
+| **Nick Chapsas (YouTube)** | Video | Free | Deep dives into modern C# features and performance |
+| **Zoran Horvat (YouTube)** | Video | Free | Advanced OOP, design patterns in C# |
+| **Tim Corey (IAmTimCorey)** | Video | Free/Paid | Practical, project-based C# teaching |
+| **dotnet channel (YouTube)** | Video | Free | Official .NET team content |
+
+### How to Practice
+- **Daily:** Pick one concept, write a small console app exploring edge cases
+- **Weekly project:** Build a small utility (file parser, config validator, CLI tool) using that week's concepts
+- **Code review your own work code** with fresh eyes — identify where you're using C# idiomatically vs just "getting it to work"
+
+---
+
+## Phase 2: ASP.NET Core & Web API (Weeks 9–20)
+
+This is the core of backend .NET development and what companies like Goldman Sachs, Deutsche Bank, and Barclays will test you on.
+
+### Topics to Cover
+
+**2.1 — ASP.NET Core Fundamentals**
+- Request pipeline and middleware (how it flows, how to write custom middleware)
+- Dependency injection (built-in DI container, service lifetimes: Transient, Scoped, Singleton)
+- Configuration system (`appsettings.json`, environment variables, secrets)
+- Logging (built-in logging, Serilog integration)
+- Environments (Development, Staging, Production)
+
+**2.2 — Building REST APIs**
+- Controllers vs Minimal APIs (know both, prefer Minimal APIs for new .NET 10 projects)
+- Route parameters, query strings, model binding
+- Action results and proper HTTP status codes
+- API versioning
+- Content negotiation
+- Request/Response DTOs (Data Transfer Objects)
+
+**2.3 — Data Validation & Error Handling**
+- Data annotations and FluentValidation
+- Global exception handling middleware
+- Problem Details (RFC 7807) for API error responses
+- Model state validation
+
+**2.4 — Authentication & Authorization**
+- JWT (JSON Web Tokens) — generation, validation, refresh tokens
+- ASP.NET Core Identity
+- Role-based and policy-based authorization
+- OAuth 2.0 / OpenID Connect fundamentals
+- API key authentication
+
+**2.5 — API Documentation & Testing**
+- OpenAPI/Swagger integration
+- API testing with HTTP files, Postman, or REST Client
+- Health checks
+
+**2.6 — Real-time Communication**
+- SignalR basics (WebSockets, Server-Sent Events fallback)
+- Hub architecture and client-server communication
+
+**2.7 — Background Services**
+- `IHostedService` and `BackgroundService`
+- Hangfire or Quartz.NET for scheduled jobs
+- Message queues: RabbitMQ basics
+
+### How to Learn
+
+| Resource | Type | Cost | Notes |
+|----------|------|------|-------|
+| **codewithmukesh.com — .NET Web API Zero to Hero** | Course (125+ lessons) | Free | The single best free ASP.NET Core course — covers everything from CRUD to Clean Architecture, Docker, CI/CD |
+| **Microsoft Learn: ASP.NET Core Path** | Tutorials | Free | Official, structured, hands-on |
+| **roadmap.sh/aspnet-core** | Visual Roadmap | Free | Great for tracking what you've covered |
+| **ASP.NET Core in Action, 3rd Ed (Andrew Lock)** | Book | Paid | ~1000 pages, extremely comprehensive |
+| **Milan Jovanovic (YouTube)** | Video | Free | Clean architecture, APIs, modern .NET patterns |
+| **Programming with Mosh** | Video | Paid | Clear ASP.NET lessons |
+
+### How to Practice
+- **Build a complete REST API project:** E-commerce API, Expense Tracker API, or Task Management API
+- Every API you build should have: JWT auth, proper error handling, validation, Swagger docs, pagination, filtering, sorting
+- **Deploy it:** Use Docker (you already know this) — containerize and run it
+- Push to GitHub with a clean README
+
+---
+
+## Phase 3: Database & Data Access (Weeks 21–28)
+
+### Topics to Cover
+
+**3.1 — Entity Framework Core (Primary ORM)**
+- Code-First approach: entities, DbContext, migrations
+- Fluent API vs Data Annotations for configuration
+- Relationships: one-to-one, one-to-many, many-to-many
+- Querying: eager loading (`Include`), explicit loading, lazy loading
+- Change tracking, `AsNoTracking()`
+- Raw SQL queries and interpolated queries
+- Performance: query optimization, N+1 problem, compiled queries
+- Migrations in production: strategies for safe schema changes
+
+**3.2 — Dapper (Lightweight Alternative)**
+- When to use Dapper vs EF Core
+- Basic CRUD with Dapper
+- Multi-mapping, stored procedures
+- Performance comparison with EF Core
+
+**3.3 — SQL Server Deep Dive**
+- Indexing strategies (clustered, non-clustered, covering indexes)
+- Query execution plans
+- Stored procedures, views, CTEs
+- Transactions and isolation levels
+- Connection pooling
+
+**3.4 — NoSQL Basics**
+- Redis for caching (StackExchange.Redis)
+- MongoDB basics with .NET driver (optional but good to know)
+
+### How to Practice
+- Take your Phase 2 API project and add a proper database layer
+- Write complex queries: reports with joins, aggregations, CTEs
+- Profile your EF Core queries — identify and fix N+1 problems
+- Set up Redis caching for frequently accessed data
+
+---
+
+## Phase 4: Architecture & Design Patterns (Weeks 29–40)
+
+This is what separates mid-level from senior. Companies like Microsoft and Goldman Sachs will ask architecture questions.
+
+### Topics to Cover
+
+**4.1 — SOLID Principles (Know These Cold)**
+- Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- Real C# examples for each, not just theory
+
+**4.2 — Design Patterns in C#**
+- Creational: Factory, Abstract Factory, Builder, Singleton
+- Structural: Adapter, Decorator, Facade, Proxy
+- Behavioral: Strategy, Observer, Command, Chain of Responsibility, Mediator
+- Repository pattern and Unit of Work
+
+**4.3 — Clean Architecture**
+- Domain layer, Application layer, Infrastructure layer, Presentation layer
+- Dependency rule: inner layers don't reference outer layers
+- CQRS (Command Query Responsibility Segregation) with MediatR
+- Domain-Driven Design (DDD) basics: Entities, Value Objects, Aggregates, Domain Events
+
+**4.4 — Modular Monolith**
+- Module boundaries and communication
+- When monolith vs microservices (spoiler: monolith is usually right for teams < 10)
+- Vertical slice architecture
+
+### How to Learn
+
+| Resource | Type | Cost | Notes |
+|----------|------|------|-------|
+| **Clean Architecture (Robert C. Martin)** | Book | Paid | The foundational book |
+| **Domain-Driven Design Quickly (InfoQ)** | E-Book | Free | DDD without the 500-page commitment |
+| **Milan Jovanovic (YouTube + Newsletter)** | Video/Blog | Free | Best .NET-specific clean architecture content |
+| **codewithmukesh.com** | Blog | Free | Clean Architecture in ASP.NET Core series |
+| **Design Patterns in C# (Refactoring.Guru)** | Website | Free | Visual explanations with C# code |
+
+### How to Practice
+- **Refactor your API project** from Phase 2–3 using Clean Architecture
+- Implement CQRS with MediatR for at least the core features
+- Write a modular monolith with 2–3 modules that communicate via events
+
+---
+
+## Phase 5: Testing (Weeks 33–38, overlapping with Phase 4)
+
+### Topics to Cover
+- **Unit Testing:** xUnit, test structure (Arrange-Act-Assert), naming conventions
+- **Mocking:** Moq or NSubstitute — mock dependencies, verify interactions
+- **Integration Testing:** `WebApplicationFactory<T>`, TestContainers for database tests
+- **Test Coverage:** What to test and what not to (don't chase 100%)
+- **TDD basics:** Red-Green-Refactor cycle
+
+### How to Practice
+- Write tests for your Phase 2–4 project: unit tests for business logic, integration tests for API endpoints
+- Aim for meaningful tests, not just coverage numbers
+
+---
+
+## Phase 6: DevOps & Cloud (Weeks 39–48)
+
+You already have Docker, Kubernetes, CI/CD, and Linux knowledge — this phase is about connecting those skills to the .NET ecosystem specifically.
+
+### Topics to Cover
+
+**6.1 — Docker for .NET**
+- Multi-stage Dockerfiles for .NET apps
+- Docker Compose for local development (API + SQL Server + Redis)
+- Health checks in containers
+
+**6.2 — CI/CD for .NET**
+- GitHub Actions workflows for .NET: build, test, publish
+- Automated testing in pipeline
+- Artifact publishing and container registry push
+
+**6.3 — Azure Basics (Important for Microsoft Target)**
+- Azure App Service deployment
+- Azure SQL Database
+- Azure Key Vault for secrets
+- Azure DevOps pipelines (if targeting Microsoft specifically)
+- Azure Functions (serverless .NET)
+
+**6.4 — Observability**
+- OpenTelemetry for .NET
+- Structured logging with Serilog + Seq or ELK
+- Distributed tracing basics
+- .NET Aspire (new orchestration and service discovery)
+
+### How to Practice
+- Containerize your project, set up CI/CD with GitHub Actions
+- Deploy to Azure (free tier) — App Service + Azure SQL
+- Set up structured logging and basic monitoring
+
+---
+
+## Phase 7: Advanced Topics (Weeks 49–60+)
+
+Pick based on your target company and role.
+
+### For Financial Services (Goldman Sachs, Deutsche Bank, Barclays, UBS)
+- **High-performance .NET:** `Span<T>`, memory pools, low-allocation patterns
+- **Concurrency:** `SemaphoreSlim`, `ReaderWriterLockSlim`, `Channel<T>`
+- **gRPC** for internal service communication
+- **Message queues:** RabbitMQ, Kafka basics
+- **System design** for financial systems (order processing, event sourcing)
+
+### For Microsoft
+- **.NET Internals:** CLR, JIT compilation, assembly loading
+- **Open source contribution** to .NET repos on GitHub
+- **Blazor** (Microsoft's UI framework)
+- **.NET MAUI** (cross-platform desktop/mobile)
+
+### For Product Companies (Atlassian, Razorpay, Postman)
+- **Microservices** with .NET (API Gateway, service mesh)
+- **Event-driven architecture** (Kafka, MassTransit)
+- **GraphQL** with Hot Chocolate
+- **Performance optimization** and load testing
+
+---
+
+## Weekly Study Plan Template
+
+Based on your 2–3 hours/day availability:
+
+| Day | Focus | Activity |
+|-----|-------|----------|
+| **Monday** | Concept Learning | Watch video / read book chapter on current topic |
+| **Tuesday** | Hands-on Coding | Write code exploring the concept — console apps, experiments |
+| **Wednesday** | Project Work | Apply concept to your ongoing project |
+| **Thursday** | Deep Dive | Read documentation, edge cases, "what happens if..." |
+| **Friday** | Project Work | Continue building, refactoring, improving project |
+| **Saturday** | Review + Practice | Review week's learning, write notes, do coding exercises |
+| **Sunday** | DSA Prep | Keep your Striver's A2Z grind going (Python) |
+
+---
+
+## Key Resources Summary
+
+### Free (Start With These)
+| Resource | What It Covers | Link |
+|----------|---------------|------|
+| Microsoft Learn C# Path | C# fundamentals to advanced | learn.microsoft.com |
+| codewithmukesh.com Zero to Hero | ASP.NET Core Web API (125+ lessons) | codewithmukesh.com/courses |
+| roadmap.sh/aspnet-core | Visual roadmap tracker | roadmap.sh |
+| Nick Chapsas (YouTube) | Modern C#, performance, .NET internals | youtube.com/@nickchapsas |
+| Milan Jovanovic (YouTube) | Clean architecture, APIs, patterns | youtube.com/@MilanJovanovic |
+| Tim Corey / IAmTimCorey (YouTube) | Practical C# & .NET projects | youtube.com/@IAmTimCorey |
+| Zoran Horvat (YouTube) | Advanced OOP, design patterns | youtube.com/@zaboravit |
+| dotnet/docs on GitHub | Official .NET documentation | github.com/dotnet/docs |
+| Refactoring.Guru | Design patterns with C# examples | refactoring.guru |
+
+### Paid (Worth the Investment)
+| Resource | What It Covers | Why It's Worth It |
+|----------|---------------|-------------------|
+| C# in Depth — Jon Skeet | Language deep dive | The definitive C# reference |
+| ASP.NET Core in Action — Andrew Lock | Full ASP.NET Core coverage | 1000 pages, covers everything |
+| Clean Architecture — Robert C. Martin | Architecture principles | Foundation for senior-level thinking |
+| Pluralsight (.NET Path) | Structured .NET courses | Good if you prefer guided learning |
+
+### GitHub Roadmap Repos (Bookmark These)
+- `github.com/milanm/DotNet-Developer-Roadmap` — Visual roadmap by seniority
+- `github.com/MoienTajik/AspNetCore-Developer-Roadmap` — ASP.NET Core specific
+
+---
+
+## How to Actually Learn (Meta-Advice)
+
+1. **Don't just watch — build.** For every concept, write code. Tutorials are input, code is output. The ratio should be 30% watching/reading, 70% coding.
+
+2. **Build 3 progressively complex projects:**
+   - **Project 1 (Phase 2–3):** Simple CRUD API (Task Manager or Notes API) — focus on getting the basics right
+   - **Project 2 (Phase 3–4):** Medium complexity (E-commerce or Expense Tracker) — add Clean Architecture, CQRS, proper testing
+   - **Project 3 (Phase 5–7):** Production-grade (a system relevant to your target domain) — add Docker, CI/CD, monitoring, caching
+
+3. **Use your work projects as a lab.** You're at a startup — volunteer for backend tasks, suggest improvements, review PRs with a learning mindset.
+
+4. **Read source code.** Look at open-source .NET projects on GitHub: eShop (Microsoft's reference architecture), Clean Architecture template by Jason Taylor, and Ardalis Clean Architecture.
+
+5. **Write about what you learn.** Even short LinkedIn posts or a dev.to blog. Teaching forces understanding.
+
+6. **Track progress.** Use the roadmap.sh/aspnet-core tracker or maintain a simple checklist.
+
+---
+
+## Timeline Summary
+
+| Phase | Weeks | Focus | Milestone |
+|-------|-------|-------|-----------|
+| 1 | 1–8 | C# Language Mastery | Can explain async, LINQ, generics, memory management in interviews |
+| 2 | 9–20 | ASP.NET Core & APIs | Built and deployed a production-quality REST API |
+| 3 | 21–28 | Database & EF Core | Comfortable with EF Core, Dapper, SQL Server optimization |
+| 4 | 29–40 | Architecture & Patterns | Refactored project to Clean Architecture with CQRS |
+| 5 | 33–38 | Testing | Project has unit + integration test coverage |
+| 6 | 39–48 | DevOps & Cloud | Project containerized, CI/CD pipeline, deployed to Azure |
+| 7 | 49–60+ | Advanced / Domain-Specific | Specialized depth for target companies |
+
+**Total: ~14 months to solid mid-level .NET mastery, with ongoing depth building after that.**
+
+---
+
+> **Remember:** You already have an uncommon edge — .NET + DevOps at the junior level. This roadmap turns that into a compelling profile for Goldman Sachs, Deutsche Bank, Microsoft, and similar targets. Keep the DSA grind going in parallel, and you'll be in a strong position within 18–24 months.
+
